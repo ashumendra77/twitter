@@ -68,43 +68,6 @@ class _HomePageState extends State<HomePage> {
       ),
       drawer: MyDrawer(),
       body: _children[_selectindex],
-      // body: ListView.builder(
-      //   padding: EdgeInsets.only(bottom: 10),
-      //   itemCount: twitterdata.length,
-      //   itemBuilder: (context, index) {
-      //     return Container(
-      //         padding: EdgeInsets.all(10),
-      //         margin: EdgeInsets.only(top: 15, right: 15, left: 15),
-      //         width: Get.width,
-      //         decoration: BoxDecoration(
-      //             borderRadius: BorderRadius.circular(10),
-      //             color: Colors.grey[300]),
-      //         child: Column(
-      //           children: [
-      //             Row(
-      //               children: [
-      //                 CircleAvatar(),
-      //                 SizedBox(width: 20),
-      //                 Text('Anni mani @annimani')
-      //               ],
-      //             ),
-      //             SizedBox(height: 10),
-      //             Text(
-      //                 'Lorem Ipsum is, simply dummy text of the printing and type setting industry. '),
-      //             SizedBox(height: 10),
-      //             Row(
-      //               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      //               children: [
-      //                 Row(children: [Icon(Icons.comment), Text('122')]),
-      //                 Row(children: [Icon(Icons.comment), Text('122')]),
-      //                 Row(children: [Icon(Icons.favorite), Text('122')]),
-      //                 Row(children: [Icon(Icons.message)])
-      //               ],
-      //             )
-      //           ],
-      //         ));
-      //   },
-      // )
     );
   }
 }

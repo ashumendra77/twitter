@@ -21,7 +21,7 @@ class FirstPage extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      CircleAvatar(),
+                      CircleAvatar(child:Text('AX')),
                       SizedBox(width: 20),
                       Text(twitterdata[index].name)
                     ],

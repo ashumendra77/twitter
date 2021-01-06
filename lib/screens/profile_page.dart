@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:twitter_ui/constant.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -9,85 +10,88 @@ class ProfilePage extends StatelessWidget {
         padding: EdgeInsets.only(top: 10, left: 10, right: 10, bottom: 10),
         children: [
           Container(
-              padding: EdgeInsets.only(top: 20),
               child: Column(
+            children: [
+              Container(
+                width: Get.width,
+                padding: EdgeInsets.only(top: 20, bottom: 20),
+                color: Colors.brown[200],
+                child: Column(
+                  children: [
+                    CircleAvatar(child: Text('AS')),
+                    Text('James Paul  @jpaul',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                    Text('Mobile Designer'),
+                    Text('Designer At ApnaTime'),
+                  ],
+                ),
+              ),
+              Divider(),
+              Row(
                 children: [
-                  CircleAvatar(child: Text('AS')),
-                  Text('James Paul  @jpaul',
-                      style: TextStyle(fontWeight: FontWeight.bold)),
-                  Text('Mobile Designer'),
-                  Text('Designer At ApnaTime'),
-                  size20,
-                  Divider(),
-                  Row(
+                  Column(
                     children: [
-                      Column(
-                        children: [
-                          Text('1980',
-                              style: TextStyle(fontWeight: FontWeight.bold)),
-                          Text('followers',
-                              style:
-                                  TextStyle(color: Colors.grey, fontSize: 12))
-                        ],
-                      ),
-                      sizeWidth10,
-                      Column(
-                        children: [
-                          Text('980',
-                              style: TextStyle(fontWeight: FontWeight.bold)),
-                          Text('following',
-                              style:
-                                  TextStyle(color: Colors.grey, fontSize: 12))
-                        ],
-                      )
+                      Text('1980',
+                          style: TextStyle(fontWeight: FontWeight.bold)),
+                      Text('followers',
+                          style: TextStyle(color: Colors.grey, fontSize: 12))
                     ],
                   ),
-                  Divider(),
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                  sizeWidth10,
+                  Column(
                     children: [
-                      CircleAvatar(child: Text('AS')),
-                      SizedBox(width: 20),
-                      Expanded(
-                        child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text('James paul @jpaul',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              Text(
-                                  'Secondary line text lorem ipsum dapibus, neque id curses faucibus.',
-                                  style: TextStyle(fontSize: 14)),
-                              size10,
-                              Image.asset('images/a1.jpeg')
-                            ]),
-                      )
-                    ],
-                  ),
-                  Divider(),
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      CircleAvatar(child: Text('AS')),
-                      SizedBox(width: 20),
-                      Expanded(
-                        child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text('James paul @jpaul',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              Text(
-                                  'Secondary line text lorem ipsum dapibus, neque id curses faucibus.',
-                                  style: TextStyle(fontSize: 14)),
-                              size10,
-                              Image.asset('images/a1.jpeg')
-                            ]),
-                      )
+                      Text('980',
+                          style: TextStyle(fontWeight: FontWeight.bold)),
+                      Text('following',
+                          style: TextStyle(color: Colors.grey, fontSize: 12))
                     ],
                   )
                 ],
-              ))
+              ),
+              Divider(),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  CircleAvatar(child: Text('AS')),
+                  SizedBox(width: 20),
+                  Expanded(
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('James paul @jpaul',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                          Text(
+                              'Secondary line text lorem ipsum dapibus, neque id curses faucibus.',
+                              style: TextStyle(fontSize: 14)),
+                          size10,
+                          Image.asset('images/a1.jpeg')
+                        ]),
+                  )
+                ],
+              ),
+              Divider(),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  CircleAvatar(child: Text('AS')),
+                  SizedBox(width: 20),
+                  Expanded(
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('James paul @jpaul',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                          Text(
+                              'Secondary line text lorem ipsum dapibus, neque id curses faucibus.',
+                              style: TextStyle(fontSize: 14)),
+                          size10,
+                          Image.asset('images/a1.jpeg')
+                        ]),
+                  )
+                ],
+              )
+            ],
+          ))
         ],
       ),
     );
